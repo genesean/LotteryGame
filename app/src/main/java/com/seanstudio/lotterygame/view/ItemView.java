@@ -1,0 +1,9 @@
+package com.seanstudio.lotterygame.view;
+
+/**
+ * Created by jeanboy on 2017/4/25.
+ */
+
+public interface ItemView {
+    void setFocus(boolean isFocuse, int index);
+}

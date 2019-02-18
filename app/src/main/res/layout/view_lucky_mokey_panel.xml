@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.seanstudio.lotterygame.util.AutoScaleRelativeLayout
+        android:id="@+id/item_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bar_bg_12"
+        app:scaleHeight="100"
+        app:scaleWidth="100">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_3dp">
+
+            <LinearLayout
+                android:id="@+id/llfirst"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <com.seanstudio.lotterygame.view.PanelItemView
+                    android:id="@+id/item1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/padding_3dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bar_fruit_12_02" />
+
+                <com.seanstudio.lotterygame.view.PanelItemView
+                    android:id="@+id/item2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/padding_3dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bar_fruit_12_07" />
+
+                <com.seanstudio.lotterygame.view.PanelItemView
+                    android:id="@+id/item3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/padding_3dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bar_fruit_12_08" />
+
+                <com.seanstudio.lotterygame.view.PanelItemView
+                    android:id="@+id/item4"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/padding_3dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bar_fruit_12_04" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llsecond"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_below="@id/llfirst"
+                android:layout_weight="2"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <com.seanstudio.lotterygame.view.PanelItemView
+                        android:id="@+id/item12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/padding_3dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bar_fruit_12_07" />
+
+                    <com.seanstudio.lotterygame.view.PanelItemView
+                        android:id="@+id/item11"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/padding_3dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bar_fruit_12_01" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/padding_3dp"
+                    android:layout_weight="2">
+
+                    <ImageView
+                        android:id="@+id/ivBg_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/bar_title_01" />
+
+                    <ImageView
+                        android:id="@+id/ivBg_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/bar_title_02"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <com.seanstudio.lotterygame.view.PanelItemView
+                        android:id="@+id/item5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/padding_3dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bar_fruit_12_03" />
+
+                    <com.seanstudio.lotterygame.view.PanelItemView
+                        android:id="@+id/item6"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/padding_3dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bar_fruit_12_05" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llthird"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <com.seanstudio.lotterygame.view.PanelItemView
+                    android:id="@+id/item10"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/padding_3dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bar_fruit_12_08" />
+
+                <com.seanstudio.lotterygame.view.PanelItemView
+                    android:id="@+id/item9"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/padding_3dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bar_fruit_12_07" />
+
+                <com.seanstudio.lotterygame.view.PanelItemView
+                    android:id="@+id/item8"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/padding_3dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bar_fruit_12_06" />
+
+                <com.seanstudio.lotterygame.view.PanelItemView
+                    android:id="@+id/item7"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/padding_3dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bar_fruit_12_08" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </com.seanstudio.lotterygame.util.AutoScaleRelativeLayout>
+</RelativeLayout>

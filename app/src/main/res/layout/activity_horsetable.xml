@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/padding_10dp"
+            android:paddingRight="@dimen/padding_10dp"
+            android:paddingTop="@dimen/padding_5dp">
+
+            <RelativeLayout
+                android:id="@+id/rlgamecontent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.seanstudio.lotterygame.view.LuckyMonkeyPanelView
+                    android:id="@+id/lucky_panel"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/llTableContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rlgamecontent"
+                android:layout_marginTop="@dimen/padding_5dp"
+                android:background="@drawable/round_rect_bluegreen_btn"
+                android:orientation="vertical"
+                android:padding="@dimen/padding_2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/round_rect_white_top_radius_btn"
+                    android:orientation="horizontal"
+                    android:splitMotionEvents="false"
+                    android:padding="@dimen/padding_2dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <com.seanstudio.lotterygame.util.AutoScaleRelativeLayout
+                            android:id="@+id/autorlPointContent1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="@dimen/padding_2dp"
+                            android:gravity="center"
+                            app:scaleHeight="50"
+                            app:scaleWidth="105">
+
+                            <ImageView
+                                android:id="@+id/ivAwardPoint1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:adjustViewBounds="true"
+                                android:src="@drawable/bar_point_bg01" />
+
+                            <TextView
+                                android:id="@+id/tvAwardPoint1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:gravity="center"
+                                android:textStyle="bold"
+                                android:textColor="@color/white"
+                                android:textSize="16dp" />
+                        </com.seanstudio.lotterygame.util.AutoScaleRelativeLayout>
+
+                        <ImageView
+                            android:id="@+id/ivAwardPic1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_below="@id/autorlPointContent1"
+                            android:adjustViewBounds="true"
+                            android:padding="@dimen/padding_2dp"
+                            android:src="@drawable/btn_million_lucky_one" />
+
+                        <TextView
+                            android:id="@+id/tvAwardName1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/ivAwardPic1"
+                            android:gravity="center_horizontal"
+                            android:paddingBottom="@dimen/padding_2dp"
+                            android:singleLine="true"
+                            android:text="獎品名稱"
+                            android:textSize="12dp" />
+
+                        <ImageView
+                            android:id="@+id/ivReallyOver1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:adjustViewBounds="true"
+                            android:scaleType="centerCrop"
+                            android:layout_margin="@dimen/padding_2dp"
+                            android:visibility="gone"
+                            android:src="@drawable/bar_fruit_6_end" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <com.seanstudio.lotterygame.util.AutoScaleRelativeLayout
+                            android:id="@+id/autorlPointContent2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="@dimen/padding_2dp"
+                            app:scaleHeight="50"
+                            app:scaleWidth="105">
+
+                            <ImageView
+                                android:id="@+id/ivAwardPoint2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:adjustViewBounds="true"
+                                android:src="@drawable/bar_point_bg02" />
+
+                            <TextView
+                                android:id="@+id/tvAwardPoint2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:gravity="center"
+                                android:textColor="@color/white"
+                                android:textSize="16dp" />
+                        </com.seanstudio.lotterygame.util.AutoScaleRelativeLayout>
+
+                        <ImageView
+                            android:id="@+id/ivAwardPic2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_below="@id/autorlPointContent2"
+                            android:adjustViewBounds="true"
+                            android:padding="@dimen/padding_2dp"
+                            android:src="@drawable/btn_million_lucky_two" />
+
+                        <TextView
+                            android:id="@+id/tvAwardName2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/ivAwardPic2"
+                            android:gravity="center"
+                            android:paddingBottom="@dimen/padding_2dp"
+                            android:singleLine="true"
+                            android:text="獎品名稱"
+                            android:textSize="12dp" />
+
+                        <ImageView
+                            android:id="@+id/ivReallyOver2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:adjustViewBounds="true"
+                            android:visibility="gone"
+                            android:layout_margin="@dimen/padding_2dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/bar_fruit_6_end" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <com.seanstudio.lotterygame.util.AutoScaleRelativeLayout
+                            android:id="@+id/autorlPointContent3"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="@dimen/padding_2dp"
+                            app:scaleHeight="50"
+                            app:scaleWidth="105">
+
+                            <ImageView
+                                android:id="@+id/ivAwardPoint3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:adjustViewBounds="true"
+                                android:src="@drawable/bar_point_bg01" />
+
+                            <TextView
+                                android:id="@+id/tvAwardPoint3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:gravity="center"
+                                android:textColor="@color/white"
+                                android:textSize="16dp" />
+                        </com.seanstudio.lotterygame.util.AutoScaleRelativeLayout>
+
+                        <ImageView
+                            android:id="@+id/ivAwardPic3"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_below="@id/autorlPointContent3"
+                            android:adjustViewBounds="true"
+                            android:padding="@dimen/padding_2dp"
+                            android:src="@drawable/btn_million_lucky_three" />
+
+                        <TextView
+                            android:id="@+id/tvAwardName3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/ivAwardPic3"
+                            android:gravity="center"
+                            android:paddingBottom="@dimen/padding_2dp"
+                            android:singleLine="true"
+                            android:text="獎品名稱"
+                            android:textSize="12dp" />
+
+                        <ImageView
+                            android:id="@+id/ivReallyOver3"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:adjustViewBounds="true"
+                            android:scaleType="centerCrop"
+                            android:visibility="gone"
+                            android:layout_margin="@dimen/padding_2dp"
+                            android:src="@drawable/bar_fruit_6_end" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <com.seanstudio.lotterygame.util.AutoScaleRelativeLayout
+                            android:id="@+id/autorlPointContent4"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="@dimen/padding_2dp"
+                            app:scaleHeight="50"
+                            app:scaleWidth="105">
+
+                            <ImageView
+                                android:id="@+id/ivAwardPoint4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:adjustViewBounds="true"
+                                android:src="@drawable/bar_point_bg02" />
+
+                            <TextView
+                                android:id="@+id/tvAwardPoint4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:gravity="center"
+                                android:textColor="@color/white"
+                                android:textSize="16dp" />
+                        </com.seanstudio.lotterygame.util.AutoScaleRelativeLayout>
+
+                        <ImageView
+                            android:layout_below="@id/autorlPointContent4"
+                            android:id="@+id/ivAwardPic4"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:adjustViewBounds="true"
+                            android:padding="@dimen/padding_2dp"
+                            android:src="@drawable/btn_million_lucky_four" />
+
+                        <TextView
+                            android:layout_below="@id/ivAwardPic4"
+                            android:id="@+id/tvAwardName4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:paddingBottom="@dimen/padding_2dp"
+                            android:singleLine="true"
+                            android:text="獎品名稱"
+                            android:textSize="12dp" />
+
+                        <ImageView
+                            android:id="@+id/ivReallyOver4"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:adjustViewBounds="true"
+                            android:scaleType="centerCrop"
+                            android:visibility="gone"
+                            android:layout_margin="@dimen/padding_2dp"
+                            android:src="@drawable/bar_fruit_6_end" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <com.seanstudio.lotterygame.util.AutoScaleRelativeLayout
+                            android:id="@+id/autorlPointContent5"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="@dimen/padding_2dp"
+                            app:scaleHeight="50"
+                            app:scaleWidth="105">
+
+                            <ImageView
+                                android:id="@+id/ivAwardPoint5"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:adjustViewBounds="true"
+                                android:src="@drawable/bar_point_bg01" />
+
+                            <TextView
+                                android:id="@+id/tvAwardPoint5"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:gravity="center"
+                                android:textColor="@color/white"
+                                android:textSize="16dp" />
+                        </com.seanstudio.lotterygame.util.AutoScaleRelativeLayout>
+
+                        <ImageView
+                            android:layout_below="@id/autorlPointContent5"
+                            android:id="@+id/ivAwardPic5"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:adjustViewBounds="true"
+                            android:padding="@dimen/padding_2dp"
+                            android:src="@drawable/btn_million_lucky_fine" />
+
+                        <TextView
+                            android:layout_below="@id/ivAwardPic5"
+                            android:id="@+id/tvAwardName5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:paddingBottom="@dimen/padding_2dp"
+                            android:singleLine="true"
+                            android:text="獎品名稱"
+                            android:textSize="12dp" />
+
+                        <ImageView
+                            android:id="@+id/ivReallyOver5"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:adjustViewBounds="true"
+                            android:scaleType="centerCrop"
+                            android:visibility="gone"
+                            android:layout_margin="@dimen/padding_2dp"
+                            android:src="@drawable/bar_fruit_6_end" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <com.seanstudio.lotterygame.util.AutoScaleRelativeLayout
+                            android:id="@+id/autorlPointContent6"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="@dimen/padding_2dp"
+                            app:scaleHeight="50"
+                            app:scaleWidth="105">
+
+                            <ImageView
+                                android:id="@+id/ivAwardPoint6"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:adjustViewBounds="true"
+                                android:src="@drawable/bar_point_bg02" />
+
+                            <TextView
+                                android:id="@+id/tvAwardPoint6"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:gravity="center"
+                                android:textColor="@color/white"
+                                android:textSize="16dp" />
+                        </com.seanstudio.lotterygame.util.AutoScaleRelativeLayout>
+
+                        <ImageView
+                            android:id="@+id/ivAwardPic6"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_below="@id/autorlPointContent6"
+                            android:adjustViewBounds="true"
+                            android:padding="@dimen/padding_2dp"
+                            android:src="@drawable/btn_million_lucky_six" />
+
+                        <TextView
+                            android:id="@+id/tvAwardName6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/ivAwardPic6"
+                            android:gravity="center"
+                            android:paddingBottom="@dimen/padding_2dp"
+                            android:singleLine="true"
+                            android:text="獎品名稱"
+                            android:textSize="12dp" />
+
+                        <ImageView
+                            android:id="@+id/ivReallyOver6"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:adjustViewBounds="true"
+                            android:scaleType="centerCrop"
+                            android:visibility="gone"
+                            android:layout_margin="@dimen/padding_2dp"
+                            android:src="@drawable/bar_fruit_6_end" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <com.seanstudio.lotterygame.util.AutoScaleRelativeLayout
+                    android:id="@+id/autorlRoofContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:scaleHeight="57"
+                    app:scaleWidth="448">
+
+                    <ImageView
+                        android:id="@+id/imageView9"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bar_bg_6" />
+
+                    <ImageView
+                        android:id="@+id/ivFinger"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/bar_icon_hand"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/padding_20dp"
+                        android:layout_alignParentRight="true"/>
+                </com.seanstudio.lotterygame.util.AutoScaleRelativeLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
